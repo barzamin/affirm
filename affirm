@@ -1,0 +1,8 @@
+#!/bin/bash
+
+affirmations=${AFFIRMATIONS:-$HOME/.config/affirmations}
+
+affirmation=$(shuf -n1 $affirmations)
+notify-send --app-name "$title" "$affirmation"
+
+
